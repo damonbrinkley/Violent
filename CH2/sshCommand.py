@@ -25,9 +25,9 @@ def connect(user, host, password):
     return child
 
 def main():
-    host = '10.81.81.55'
-    user = 'test'
-    password = 'toor'
+    host = '192.168.10.100'
+    user = 'msfadmin'
+    password = 'msfadmin'
     child = connect(user, host, password)
     send_command(child, 'cat /etc/resolv.conf')
 
